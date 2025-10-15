@@ -1,0 +1,119 @@
+body { 
+    font-family: sans-serif; 
+    margin: 20px; 
+}
+
+.container {
+     border: 1px solid black; 
+     padding: 10px;
+      
+    }
+
+h1 {
+  text-align: center; 
+  margin-bottom: 19px;
+  font-family: cursive;
+}
+
+h2 {
+  text-align: left ; 
+  margin-bottom: 19px;
+  font-family: cursive;
+
+}
+
+.header {
+     text-align: center; 
+     font-size: 1.2em; 
+     font-weight: bold; 
+     margin-bottom: 20px; 
+    }
+
+.grid-container { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    border-top: 1px solid black; 
+}
+
+.section { 
+    padding: 10px; 
+    border-right: 1px solid black;
+ }
+
+.section:last-child {
+     border-right: none; 
+    }
+
+.grey { 
+    margin-top: 0;
+    margin-bottom: 100px;
+    color: grey;
+}
+
+ul { 
+    list-style-type: none; 
+    padding: 0;
+ }
+
+li { 
+    border-bottom: 1px solid black; 
+    padding: 8px 0;
+ }
+
+.education-list li { 
+    border-bottom: none; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+
+.logo {
+  width: 40px; 
+  height: 40px; 
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.your-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  
+}
+
+
+.three-box {
+    margin: 10px;
+    font-size: 17px;
+    height: auto;
+    border: 2px solid #222;
+    border-radius: 35px;
+    padding: 15px;
+}
+
+footer {
+    text-align: center; 
+    font-size: 0.8em; 
+    font-family: cursive;
+    margin-top: 20px; 
+    color: black
+  }
+
+
+ 

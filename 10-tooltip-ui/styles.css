@@ -1,0 +1,100 @@
+body {
+    font: bold 20px Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin: 50px;
+}
+
+
+/* Tooltip */
+.tooltip-container {
+  position: relative; 
+  display: inline-block; 
+  margin: 0 20px; 
+  padding-bottom: 5px; 
+}
+
+
+    .tooltip-text {
+    /* Hiding the pop-up by default */
+    visibility: hidden; 
+    opacity: 0;
+
+    /* Tooltip box appearance */
+    width: 150px; 
+    background-color: #141414;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 0.85em;
+    
+    /* Positioning the pop-up ABOVE the link */
+    position: absolute;
+    z-index: 10; 
+    bottom: 150%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    
+    /* Smooth transition for showing/hiding */
+    transition: opacity 0.3s, visibility 0.3s;
+    }
+
+    .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+
+    /* Creates a downward-pointing triangle */
+    border-color: #141414 transparent transparent transparent; 
+        
+    }
+
+    .tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    }
+
+    /* Home (fade-in effect) */
+    .home .tooltip-text {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    }
+
+    .home:hover .tooltip-text {
+    opacity: 1;
+    }
+
+    /* Projects (slide-in effect) */
+    .projects .tooltip-text {
+    transform: translateX(-50%) translateY(10px);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .projects:hover .tooltip-text {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    }
+
+    /* Contact (scale-in effect) */
+    .contact .tooltip-text {
+    transform: translateX(-50%) scale(0);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .contact:hover .tooltip-text {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+    }
