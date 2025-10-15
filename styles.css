@@ -1,0 +1,75 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 40px;
+    background-color: #f9f9f9;
+    color: #222;
+}
+.summary p {
+    text-align: justify;
+    font-size: 1em;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 32px 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+    h1 {
+    font-size: 2em;
+    margin: 0px 0 0px 0;
+    }
+    .container p {
+    margin-top: 0px ;
+    }
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.year {
+    font-size: 0.9em;
+    color: #555;
+}
+
+h2, h3 {
+    margin: 0;
+    font-size: 1.5em;
+    margin-top: 1.5em;
+}
+
+.traineeship p {
+    margin: 0px;
+}
+    .traineeship ul{
+        margin-top: 10px;
+    }
+
+
+.project p {
+    text-align: justify;
+}
+
+.skills li {
+    margin: 10px 0;
+}
+
+.contact img{
+    margin-left: 18px;
+    margin-bottom: 5px;
+}
+.contact .icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 5px;
+    margin-right: 8px;
+
+}
+
+    .contact a {
+        text-decoration: none; 
+        color: inherit;
+    }
